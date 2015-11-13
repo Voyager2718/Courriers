@@ -1,0 +1,9 @@
+package letters;
+
+import inhabitents.Inhabitents;
+
+public abstract class Letter {
+	Inhabitents sender;
+	Inhabitents receiver;
+	Content content;
+}

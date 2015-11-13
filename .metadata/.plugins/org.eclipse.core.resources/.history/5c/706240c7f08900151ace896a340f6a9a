@@ -1,0 +1,9 @@
+package content;
+
+public class MoneyContent implements Content <T>{
+	protected int amount;
+	
+	public MoneyContent(int amount){
+		
+	}
+}

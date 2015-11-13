@@ -1,0 +1,6 @@
+package inhabitent;
+
+public class Inhabitant {
+	protected String name;
+	
+}

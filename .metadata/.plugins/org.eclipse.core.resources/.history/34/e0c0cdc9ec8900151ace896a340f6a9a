@@ -1,0 +1,11 @@
+package cities;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import letters.Letter;;
+
+public class Postbox{
+	protected List<letter>letters = new ArrayList<Letter>();
+	
+}

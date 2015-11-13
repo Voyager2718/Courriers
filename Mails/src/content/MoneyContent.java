@@ -1,0 +1,9 @@
+package content;
+
+public class MoneyContent implements Content{
+	protected int amount;
+	
+	public MoneyContent(int amount){
+		
+	}
+}

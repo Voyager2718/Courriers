@@ -1,0 +1,6 @@
+package cities;
+
+public class City {
+	protected String name;
+	protected 
+}

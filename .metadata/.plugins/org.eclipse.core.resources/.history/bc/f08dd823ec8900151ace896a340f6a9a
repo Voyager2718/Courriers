@@ -1,0 +1,28 @@
+package cities;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import inhabitents.Inhabitent;
+
+public class City {
+	protected String name;
+	protected List<Inhabitent> inhabitents = new ArrayList<Inhabitent>();
+	
+	City(String name){
+		this.name = name;
+	}
+	
+	City(String name, List<Inhabitent> inhabitents){
+		this.name = name;
+		this.inhabitents.addAll(inhabitents);
+	}
+	
+	public void addInhabitent(Inhabitent inhabitent){
+		this.inhabitents.add(inhabitent);
+	}
+	
+	public void addInhabitents(List<Inhabitent> inhabitent){
+		
+	}
+}

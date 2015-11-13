@@ -1,0 +1,9 @@
+package city;
+
+public class BankAccount {
+	protected int amount;
+	
+	public void credit(int credit){
+		this.amount -= credit;
+	}
+}

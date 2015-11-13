@@ -1,0 +1,11 @@
+package letters;
+
+import content.Content;
+import inhabitents.Inhabitents;
+
+public abstract class Letter {
+	Inhabitents sender;
+	Inhabitents receiver;
+	Content content;
+	int cost;
+}

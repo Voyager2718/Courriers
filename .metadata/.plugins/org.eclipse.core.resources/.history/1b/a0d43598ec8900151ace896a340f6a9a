@@ -1,0 +1,6 @@
+
+public class Postbox {
+	protected List<Letter>letters = new ArrayList<Letter>();
+	
+	
+}

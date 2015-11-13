@@ -1,0 +1,24 @@
+package city;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import letter.Letter;;
+
+public class Postbox{
+	protected List<Letter>letters = new ArrayList<Letter>();
+	
+	Postbox(){
+		
+	}
+	
+	public void addLetter(Letter letter){
+		this.letters.add(letter);
+	}
+	
+	public void addLetter(List<Letter> letters){
+		this.letters.addAll(letters);
+	}
+	
+	public 
+}
