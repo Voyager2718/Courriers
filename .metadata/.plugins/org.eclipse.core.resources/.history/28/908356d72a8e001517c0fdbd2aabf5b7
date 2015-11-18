@@ -1,0 +1,9 @@
+package test;
+
+public class DecoratedLetterTest {
+	public static void main(String args[]) {
+		Letter decoratedLetter = new MoneyLetter(new BoxLetter(new SimpleLetter()));
+		System.out.println(decoratedLetter.getDescription());
+		System.out.println(decoratedLetter instanceof SimpleLetter);
+	}
+}

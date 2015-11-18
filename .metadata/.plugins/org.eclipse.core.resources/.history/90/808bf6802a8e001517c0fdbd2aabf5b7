@@ -1,0 +1,10 @@
+package test;
+
+public class BoxLetter extends LetterDecorator {
+
+	public BoxLetter(Letter decoratedLetter) {
+		super(decoratedLetter);
+
+	}
+
+}
