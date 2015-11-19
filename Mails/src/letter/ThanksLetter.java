@@ -10,7 +10,6 @@ public class ThanksLetter extends SimpleLetter {
 
 	public void doSend() {
 		// TODO Auto-generated method stub
-
 	}
 
 	public Letter doReceive() {

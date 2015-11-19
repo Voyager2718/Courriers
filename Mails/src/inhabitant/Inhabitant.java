@@ -27,12 +27,12 @@ public class Inhabitant {
 	public void debit(int cost) {
 		bankAccount.debit(cost);
 		System.out.println("-" + Integer.toString(cost) + " euros are debited from inhabitant-" + getName()
-				+ " account whose balance is now " + Integer.toString(getBalance()) + "euros.");
+				+ " account whose balance is now " + Integer.toString(getBalance()) + " euros.");
 	}
 
 	public void credit(int cost) {
 		System.out.println("+ Inhabitant-" + getName() + " account is credited with " + Integer.toString(cost)
-				+ " euros whose balance is now " + Integer.toString(getBalance()) + "euros.");
+				+ " euros whose balance is now " + Integer.toString(getBalance()) + " euros.");
 		bankAccount.credit(cost);
 	}
 }

@@ -17,4 +17,8 @@ public class RegisteredLetter extends LetterDecorator {
 	public Letter doReceive() {
 		return null; // TODO : Should return a receipt.
 	}
+
+	public int getCost() {
+		return decoratedLetter.getCost();
+	}
 }

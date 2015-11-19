@@ -17,4 +17,9 @@ public class UrgentLetter extends LetterDecorator {
 	public Letter doReceive() {
 		return null;// TODO : Should return a receipt.
 	}
+
+	public int getCost() {
+		return decoratedLetter.getCost() * 2;// The price of urgent letter is
+												// twice of simple letter.
+	}
 }

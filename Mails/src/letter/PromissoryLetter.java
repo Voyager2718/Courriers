@@ -1,8 +1,11 @@
 package letter;
 
 public class PromissoryLetter extends LetterDecorator {
-	public PromissoryLetter(Letter decoratedLetter) {
+	protected int moneyToTransfer;
+
+	public PromissoryLetter(int moneyToTransfer, Letter decoratedLetter) {
 		this.decoratedLetter = decoratedLetter;
+		this.moneyToTransfer = moneyToTransfer;
 	}
 
 	public String getDescription() {
@@ -11,10 +14,13 @@ public class PromissoryLetter extends LetterDecorator {
 
 	public void doSend() {
 		// TODO Auto-generated method stub
-
 	}
 
 	public Letter doReceive() {
-		return null;//If no need to send a receive, then return null
+		return null;// If no need to send a receive, then return null
+	}
+
+	public int getCost() {
+		return (int) (decoratedLetter.getCost() * 0.01 + 1);
 	}
 }
