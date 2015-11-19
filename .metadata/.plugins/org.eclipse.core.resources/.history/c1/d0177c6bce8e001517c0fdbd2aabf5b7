@@ -1,0 +1,8 @@
+package test;
+
+public class LetterTest {
+	@Test
+	public void SimpleLetterTest() {
+
+	}
+}

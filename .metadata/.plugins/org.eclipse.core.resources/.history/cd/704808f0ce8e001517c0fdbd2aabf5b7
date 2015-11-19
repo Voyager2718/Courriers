@@ -1,0 +1,24 @@
+package test;
+
+import org.junit.Before;
+import org.junit.Test;
+
+import inhabitant.Inhabitant;
+import letter.IncorrectCostException;
+import letter.Letter;
+import letter.SimpleLetter;
+
+public class SimpleLetterTest {
+	protected Inhabitant inhabitant0;
+	protected Inhabitant inhabitant1;
+
+	@Before
+	public void init() {
+		this.inhabitant0
+	}
+
+	@Test(expected = IncorrectCostException.class)
+	public void LetterCostNegativeTest() throws IncorrectCostException {
+		Letter letter = new SimpleLetter(-1, null, null, null);
+	}
+}

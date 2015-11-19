@@ -1,0 +1,10 @@
+package test;
+
+import org.junit.Test;
+
+public class LetterTest {
+	@Test
+	public void SimpleLetterTest() {
+
+	}
+}

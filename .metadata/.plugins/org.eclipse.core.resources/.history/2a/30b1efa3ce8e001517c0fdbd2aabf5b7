@@ -1,0 +1,13 @@
+package test;
+
+import org.junit.Test;
+
+import letter.Letter;
+import letter.SimpleLetter;
+
+public class SimpleLetterTest {
+	@Test
+	public void LetterTest() {
+		Letter letter = new SimpleLetter(-1, null, null, null);
+	}
+}

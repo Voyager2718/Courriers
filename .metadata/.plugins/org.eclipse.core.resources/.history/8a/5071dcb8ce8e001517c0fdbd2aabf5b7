@@ -1,0 +1,14 @@
+package test;
+
+import org.junit.Test;
+
+import letter.IncorrectCostException;
+import letter.Letter;
+import letter.SimpleLetter;
+
+public class SimpleLetterTest {
+	@Test(expects = IncorrectCostException)
+	public void LetterCostNegativeTest() throws IncorrectCostException {
+		Letter letter = new SimpleLetter(-1, null, null, null);
+	}
+}

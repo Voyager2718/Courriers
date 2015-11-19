@@ -1,0 +1,13 @@
+package test;
+
+import org.junit.Test;
+
+import inhabitant.Inhabitant;
+
+public class InhabitantTest {
+	@Test
+	public void InhabitantCreationTest() {
+		Inhabitant yang = new Inhabitant("YANG",100000000);
+		assert(100000000,yang.getBalance())
+	}
+}
