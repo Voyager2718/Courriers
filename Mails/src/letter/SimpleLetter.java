@@ -32,7 +32,7 @@ public class SimpleLetter implements Letter {
 	}
 
 	public String getDescription() {
-		return "This is a letter";
+		return "a simple letter";
 	}
 
 	public int getCost() {
@@ -41,7 +41,7 @@ public class SimpleLetter implements Letter {
 
 	public void doSend() {
 		System.out.println("o-> Inhabitant-" + getSender().getName()
-				+ " mails an simple letter whose content is a text (" + getText().getContent() + ") to inhabitent-"
+				+ " mails "+this.getDescription()+" whose content is a text (" + getText().getContent() + ") to inhabitent-"
 				+ getReceiver().getName() + " for a cost of " + Integer.toString(getCost()) + " euros.");
 	}
 

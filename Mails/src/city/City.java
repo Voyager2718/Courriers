@@ -53,13 +53,13 @@ public class City {
 	}
 
 	public void sendLetter(Inhabitant sender, Letter letter) {
+		letter.doSend();
 		sender.debit(letter.getCost());
 		postBox.add(letter);
 	}
 
 	public void distributeLetters() {
 		while (!postBox.isEmpty()) {
-			postBox.get(0).doSend();
 			deliveringBox.add(postBox.get(0));
 			postBox.remove(0);
 		}

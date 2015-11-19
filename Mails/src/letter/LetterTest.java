@@ -24,6 +24,7 @@ public class LetterTest {
 		for (int daysPassed = 0; daysPassed < days; daysPassed++) {
 			System.out.println("**********************************");
 			System.out.println("Day "+(daysPassed+1));
+			city.distributeLetters();
 			daySender=new Random().nextInt(5)+1;
 			for (int i = 0; i < daySender; i++) {
 				sender = new Random().nextInt(100);
@@ -38,25 +39,23 @@ public class LetterTest {
 	protected static Letter getARandomLetter(Inhabitant sender, Inhabitant receiver) throws IncorrectCostException {
 		int r=new Random().nextInt(5);
 		Letter letter = new SimpleLetter(2, sender, receiver, new TextContent("bla bla"));
-		
+		TextContent t = new TextContent("bla bla");
 		switch (0) {
 		case 0:
-			letter = new SimpleLetter(2, sender, receiver, new TextContent("bla bla"));
+			letter = new SimpleLetter(2, sender, receiver, t);
 			break;
 		case 1:
 			letter = new PromissoryLetter(new MoneyContent(50), letter);
 			break;
 		case 2:
-			
+			letter = new Receipt(2, sender, receiver);
 			break;
 		case 3:
-			
+			letter = new ThanksLetter(2, sender, receiver, t);
 			break;
 		case 4:
-			
+			letter = new UrgentLetter(letter);
 			break;
-		default:
-			
 		}
 		return letter;
 	}
