@@ -8,4 +8,13 @@ public class PromissoryLetter extends LetterDecorator {
 	public String getDescription() {
 		return decoratedLetter.getDescription() + " with money";
 	}
+
+	public void doSend() {
+		// TODO Auto-generated method stub
+
+	}
+
+	public void doReceive() {
+
+	}
 }

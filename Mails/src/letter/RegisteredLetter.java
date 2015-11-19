@@ -8,4 +8,14 @@ public class RegisteredLetter extends LetterDecorator {
 	public String getDescription() {
 		return decoratedLetter.getDescription() + " with an acknowledgment of receipt";
 	}
+
+	public void doSend() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void doReceive() {
+		// TODO Auto-generated method stub
+		
+	}
 }

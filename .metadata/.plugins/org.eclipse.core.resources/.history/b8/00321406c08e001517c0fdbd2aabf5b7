@@ -1,0 +1,13 @@
+package letter;
+
+import inhabitant.Inhabitant;
+
+public abstract class Letter {
+	public abstract String getDescription();
+
+	public abstract Inhabitant getSender();
+
+	public abstract Inhabitant getReceiver();
+
+	
+}
