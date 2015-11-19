@@ -49,13 +49,15 @@ public class City {
 	}
 
 	public void addInhabitants(List<Inhabitant> inhabitant) {
-		this.inhabitants.addAll(inhabitants);
+		for (Inhabitant inhabitant2 : inhabitant) {
+			addInhabitant(inhabitant2);
+		}
 	}
 
 	public void sendLetter(Inhabitant sender, Letter letter) {
 		letter.doSend();
 		sender.debit(letter.getCost());
-		postBox.add(letter);
+		this.postBox.add(letter);
 	}
 
 	public void distributeLetters() {
