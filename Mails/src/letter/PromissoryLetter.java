@@ -15,10 +15,15 @@ public class PromissoryLetter extends LetterDecorator {
 	}
 
 	public void doSend() {
-		// TODO Auto-generated method stub
+		System.out.println("o-> Inhabitant-" + getSender().getName()
+				+ " mails a promissory letter whose content is money (" + this.moneyToTransfer + " euros) to inhabitent-"
+				+ getReceiver().getName() + " for a cost of " + Integer.toString(getCost()) + " euros.");
+		getSender().debit(moneyToTransfer.getContent());
 	}
 
 	public Letter doReceive() {
+		System.out.println("<-o Inhabitant-" + getReceiver().getName() + " receives a promissory letter whose content is money (" + this.moneyToTransfer + " euros) from inhabitant-" + getSender().getName());
+		getReceiver().credit(moneyToTransfer.getContent());
 		return null;// If no need to send a receive, then return null
 	}
 
