@@ -1,0 +1,7 @@
+package content;
+
+public class TextContent implements ContentDecorator {
+	public TextContent(Content content) {
+		super(content);
+	}
+}

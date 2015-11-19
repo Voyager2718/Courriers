@@ -1,0 +1,17 @@
+package letter;
+
+public class SimpleLetter implements Letter{
+	protected int cost;
+	Inhabitant sender;
+	Inhabitant receiver;
+
+	public SimpleLetter(int cost) throws IncorrectCostException {
+		if(cost<0)
+			throw new IncorrectCostException();
+		this.cost = cost;
+	}
+	
+	public String getDescription() {
+		return "This is a letter";
+	}
+}

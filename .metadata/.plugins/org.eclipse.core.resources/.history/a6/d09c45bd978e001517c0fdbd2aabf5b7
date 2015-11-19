@@ -1,0 +1,8 @@
+package letter;
+
+public class SimpleLetter extends LetterDecorator{
+	@Override
+	public String getDescription() {
+		return " ";
+	}
+}

@@ -1,0 +1,12 @@
+package letter;
+
+public class UrgentLetter extends LetterDecorator {
+	public UrgentLetter(Letter decoratedLetter) {
+		this.decoratedLetter = decoratedLetter;
+	}
+
+	@Override
+	public String getDescription() {
+		return decoratedLetter.get "which is urgent";
+	}
+}

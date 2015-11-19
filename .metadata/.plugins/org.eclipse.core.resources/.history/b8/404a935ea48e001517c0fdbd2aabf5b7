@@ -1,0 +1,9 @@
+package content;
+
+public class TextContent extends ContentDecorator {
+	String text;
+	
+	public TextContent(String text, Content content) {
+		super(content);
+	}
+}

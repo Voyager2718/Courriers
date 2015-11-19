@@ -1,0 +1,8 @@
+package content;
+
+public class MoneyContent extends ContentDecorator{
+	
+	public MoneyContent(Content content, int amount){
+		super(content);
+	}
+}

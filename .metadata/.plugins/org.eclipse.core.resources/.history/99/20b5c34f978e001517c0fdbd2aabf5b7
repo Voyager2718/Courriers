@@ -1,0 +1,10 @@
+package letter;
+
+
+
+public class LetterDecorator implements Letter{
+	protected Letter decoratedLetter;
+
+	public abstract String getDescription();
+	
+}

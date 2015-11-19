@@ -1,0 +1,6 @@
+package content;
+
+public abstract class ContentDecorator {
+	Content decoratedContent;
+	public ContentDecorator(Content )
+}

@@ -1,0 +1,13 @@
+package letter;
+
+public class PromissoryLetter extends LetterDecorator{
+
+	@Override
+	public String getDescription() {
+		return " with money";
+	}
+
+	public PromissoryLetter(Letter letter){
+		
+	}
+}

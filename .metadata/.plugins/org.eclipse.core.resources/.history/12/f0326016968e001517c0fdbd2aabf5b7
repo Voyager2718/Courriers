@@ -1,0 +1,8 @@
+package letter;
+
+import content.Content;
+import inhabitant.Inhabitant;
+
+public interface Letter {
+	
+}

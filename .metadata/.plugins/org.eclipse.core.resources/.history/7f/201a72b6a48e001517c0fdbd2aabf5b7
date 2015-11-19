@@ -1,0 +1,9 @@
+package content;
+
+public class SimpleContent implements Content {
+	protected int amount;
+	
+	
+
+	//public Content getContent();
+}

@@ -1,0 +1,11 @@
+package letter;
+
+import letter.Letter;
+
+public abstract class LetterDecorator extends Letter{
+	protected Letter decoratedLetter;
+
+	public abstract String getDescription();
+	
+	
+}

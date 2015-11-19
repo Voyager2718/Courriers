@@ -1,0 +1,12 @@
+package content;
+
+public class SimpleContent extends ContentDecorator{
+	int 
+	public SimpleContent(Content content){
+		super(content);
+	}
+	
+	public Content getContent(){
+		return 
+	}
+}

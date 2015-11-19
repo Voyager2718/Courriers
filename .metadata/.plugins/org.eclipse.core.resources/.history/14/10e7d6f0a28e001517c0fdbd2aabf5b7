@@ -1,0 +1,6 @@
+package letter;
+
+public interface Letter {
+	public String getDescription();
+	public Inhabitant getSender();
+}

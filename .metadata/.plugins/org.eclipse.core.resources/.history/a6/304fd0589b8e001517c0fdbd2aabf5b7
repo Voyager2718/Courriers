@@ -1,0 +1,10 @@
+package letter;
+
+public class IncorrectCostException extends Exception{
+
+	/**
+	 * The cost of a letter should always be positive.
+	 */
+	private static final long serialVersionUID = 1L;
+
+}

@@ -1,0 +1,7 @@
+package letter;
+
+public abstract class Letter {
+	protected int cost;
+	
+	public abstract String getDescription();
+}

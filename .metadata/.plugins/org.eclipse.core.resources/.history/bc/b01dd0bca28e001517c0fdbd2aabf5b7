@@ -1,0 +1,11 @@
+package letter;
+
+import letter.Letter;
+
+public abstract class LetterDecorator implements Letter{
+	protected Letter decoratedLetter;
+	
+	public Inhabitant getSender(){
+		
+	}
+}

@@ -1,0 +1,7 @@
+package letter;
+
+import test.Letter;
+
+public class DecoratedLetter {
+	protected Letter decoratedLetter;
+}

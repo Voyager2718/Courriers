@@ -2,20 +2,24 @@ package city;
 
 public class BankAccount {
 	protected int amount;
-	
-	public BankAccount(){
+
+	public BankAccount() {
 		this.amount = 0;
 	}
-	
-	public void credit(int credit){
+
+	public BankAccount(int balance) {
+		this.amount = balance;
+	}
+
+	public void credit(int credit) {
 		this.amount += credit;
 	}
-	
-	public void debit(int debit){
+
+	public void debit(int debit) {
 		this.amount -= debit;
 	}
-	
-	public int balance(){
+
+	public int getBalance() {
 		return this.amount;
 	}
 }

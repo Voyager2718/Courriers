@@ -1,0 +1,12 @@
+package content;
+
+public class SimpleContent implements Content {
+	protected int amount;
+
+	public SimpleContent() {
+	}
+
+	public Content getContent(){
+		return 
+	}
+}

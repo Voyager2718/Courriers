@@ -1,0 +1,12 @@
+package letter;
+
+import test.Letter;
+
+public class LetterDecorator implements Letter{
+	protected Letter decoratedLetter;
+
+	public String getDescription() {
+		return "";
+	}
+	
+}

@@ -1,9 +1,10 @@
 package content;
 
-public class MoneyContent implements Content{
+public class MoneyContent extends ContentDecorator {
 	protected int amount;
-	
-	public MoneyContent(int amount){
-		
+
+	public MoneyContent(int amount, Content content) {
+		super(content);
+		this.amount = amount;
 	}
 }

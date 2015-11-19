@@ -1,0 +1,10 @@
+package letter;
+
+public class IncorrectCostException extends Exception{
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+}

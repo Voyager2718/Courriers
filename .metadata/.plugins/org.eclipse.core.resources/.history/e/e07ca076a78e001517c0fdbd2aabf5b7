@@ -1,0 +1,9 @@
+package content;
+
+public abstract class ContentDecorator {
+	Content decoratedContent;
+
+	public ContentDecorator(Content content) {
+		this.decoratedContent = content;
+	}
+}
