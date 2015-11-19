@@ -11,15 +11,15 @@ public class Receipt extends SimpleLetter {
 	}
 
 	public String getDescription() {
-		return "This is a receipt.";
+		return "a receipt.";
 	}
 
 	public void doSend() {
-		// TODO Auto-generated method stub
+		super.doSend();
+		System.out.println("no text");
 	}
 
 	public Letter doReceive() {
-		// TODO Auto-generated method stub
-		return null;// No need to send a receipt.
+		return null;
 	}
 }

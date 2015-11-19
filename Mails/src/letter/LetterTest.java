@@ -34,13 +34,15 @@ public class LetterTest {
 				city.sendLetter(tab[sender], getARandomLetter(tab[sender],tab[receiver]));
 			}
 		}
+		Receipt r = new Receipt(10, tab[1], tab[2]);
+		r.doSend();
 	}
 
 	protected static Letter getARandomLetter(Inhabitant sender, Inhabitant receiver) throws IncorrectCostException {
 		int r=new Random().nextInt(5);
 		Letter letter = new SimpleLetter(2, sender, receiver, new TextContent("bla bla"));
 		TextContent t = new TextContent("bla bla");
-		switch (0) {
+		switch (r) {
 		case 0:
 			letter = new SimpleLetter(2, sender, receiver, t);
 			break;
