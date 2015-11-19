@@ -14,8 +14,7 @@ public class UrgentLetter extends LetterDecorator {
 
 	}
 
-	public void doReceive() {
-		// TODO Auto-generated method stub
-
+	public Letter doReceive() {
+		return null;// TODO : Should return a receipt.
 	}
 }

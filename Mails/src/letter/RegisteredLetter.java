@@ -11,11 +11,10 @@ public class RegisteredLetter extends LetterDecorator {
 
 	public void doSend() {
 		// TODO Auto-generated method stub
-		
+
 	}
 
-	public void doReceive() {
-		// TODO Auto-generated method stub
-		
+	public Letter doReceive() {
+		return null; // TODO : Should return a receipt.
 	}
 }

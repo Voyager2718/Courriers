@@ -5,6 +5,7 @@ import city.BankAccount;
 public class Inhabitant {
 	protected String name;
 	protected BankAccount bankAccount;
+	//Unread letters?
 
 	public Inhabitant(String name) {
 		this.name = name;

@@ -1,0 +1,14 @@
+package letter;
+
+import city.City;
+import inhabitant.Inhabitant;
+
+public class LetterTest {
+	public static void main(String args[]) {
+		City city = new City("Canton");
+		Inhabitant yang = new Inhabitant("YANG");
+		Letter letter = new SimpleLetter(1, yang, yang, "Hello");
+		city.addInhabitant(yang);
+		city.sendLetter(yang, letter);
+	}
+}

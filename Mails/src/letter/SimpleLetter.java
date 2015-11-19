@@ -38,15 +38,18 @@ public class SimpleLetter implements Letter {
 	}
 
 	public void doSend() {
-		System.out.println("Inhabitant-" + getSender().getName()
+		System.out.println("-> Inhabitant-" + getSender().getName()
 				+ " mails an simple letter whose content is a text content (" + getText() + ") to inhabitent-"
-				+ getReceiver().getName() + " for  a cost of " + Integer.toString(getCost()) + " euros.");
+				+ getReceiver().getName() + " for a cost of " + Integer.toString(getCost()) + " euros.");
 		getSender().debit(getCost());// The order of these 2
 										// calls is important.
 	}
 
-	public void doReceive() {
-		// TODO Auto-generated method stub
-
+	public Letter doReceive() {
+		System.out.println("<- Inhabitant-" + getReceiver().getName()
+				+ " receives a simple letter whose content is a text content " + getText() + " from inhabitant-"
+				+ getSender().getName());
+		return null;// TODO : If no need to send a receipt or thanks letter,
+					// return null.
 	}
 }

@@ -1,0 +1,14 @@
+package letter;
+
+import inhabitant.Inhabitant;
+
+public class LetterTest {
+	public static void main(String args[]) {
+		try {
+			Letter decoratedLetter = new PromissoryLetter(
+					new SimpleLetter(-1, new Inhabitant("YANG"), new Inhabitant("Sont"), "Hello"));
+		} catch (IncorrectCostException e) {
+			System.out.println(e.getMessage());
+		}
+	}
+}

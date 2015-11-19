@@ -1,0 +1,11 @@
+package letter;
+
+import city.City;
+import inhabitant.Inhabitant;
+
+public class LetterTest {
+	public static void main(String args[]) {
+		City city = new City("Canton");
+		city.addInhabitant(new Inhabitant(null));
+	}
+}

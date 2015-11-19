@@ -14,7 +14,7 @@ public class PromissoryLetter extends LetterDecorator {
 
 	}
 
-	public void doReceive() {
-
+	public Letter doReceive() {
+		return null;//If no need to send a receive, then return null
 	}
 }

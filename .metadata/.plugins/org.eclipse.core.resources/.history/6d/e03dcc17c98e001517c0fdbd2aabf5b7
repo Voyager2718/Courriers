@@ -1,0 +1,16 @@
+package letter;
+
+public class IncorrectCostException extends Exception {
+
+	public IncorrectCostException(String message) {
+		super(message);
+	}
+
+	/**
+	 * The cost of a letter should always be positive. If not, this exception
+	 * will be thrown.
+	 */
+	private static final long serialVersionUID = 1L;// Should understand what
+													// does it do.
+
+}
