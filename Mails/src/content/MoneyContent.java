@@ -1,10 +1,13 @@
 package content;
 
-public class MoneyContent extends ContentDecorator {
+public class MoneyContent {
 	protected int amount;
 
-	public MoneyContent(int amount, Content content) {
-		super(content);
+	public MoneyContent(int amount) {
 		this.amount = amount;
+	}
+
+	public int getContent() {
+		return amount;
 	}
 }

@@ -1,0 +1,8 @@
+package content;
+
+public class SimpleContent implements Content {
+	public int getContent() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+}

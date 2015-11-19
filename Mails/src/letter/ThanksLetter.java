@@ -1,10 +1,12 @@
 package letter;
 
+import content.TextContent;
 import inhabitant.Inhabitant;
 
 public class ThanksLetter extends SimpleLetter {
 
-	public ThanksLetter(int cost, Inhabitant sender, Inhabitant receiver, String text) throws IncorrectCostException {
+	public ThanksLetter(int cost, Inhabitant sender, Inhabitant receiver, TextContent text)
+			throws IncorrectCostException {
 		super(cost, sender, receiver, text);
 	}
 

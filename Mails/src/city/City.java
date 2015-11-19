@@ -12,6 +12,7 @@ public class City {
 	protected List<Letter> postBox = new ArrayList<Letter>();
 	protected List<Letter> deliveringBox = new ArrayList<Letter>();
 
+	@SuppressWarnings("unused")
 	private void drawStars(int quantity) {// This function can be used for
 											// drawing stars.
 		for (int i = 0; i < quantity; i++)

@@ -1,0 +1,13 @@
+package content;
+
+public class TextContent implements Content {
+	protected String text;
+
+	public TextContent(String text){
+		this.text = text;
+	}
+
+	public int getContent() {
+		return text;
+	}
+}

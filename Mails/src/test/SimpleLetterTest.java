@@ -3,6 +3,7 @@ package test;
 import org.junit.Before;
 import org.junit.Test;
 
+import content.TextContent;
 import inhabitant.Inhabitant;
 import letter.IncorrectCostException;
 import letter.Letter;
@@ -20,7 +21,7 @@ public class SimpleLetterTest {
 
 	@Test(expected = IncorrectCostException.class)
 	public void LetterCostNegativeTest() throws IncorrectCostException {
-		Letter letter = new SimpleLetter(-1, inhabitant0, inhabitant1, "Hello");
+		Letter letter = new SimpleLetter(-1, inhabitant0, inhabitant1, new TextContent("Hello"));
 		System.out.println(letter.getDescription());
 	}
 }

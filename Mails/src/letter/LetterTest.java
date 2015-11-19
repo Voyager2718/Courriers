@@ -1,6 +1,7 @@
 package letter;
 
 import city.City;
+import content.TextContent;
 import inhabitant.Inhabitant;
 
 public class LetterTest {
@@ -9,7 +10,7 @@ public class LetterTest {
 		Inhabitant yang = new Inhabitant("YANG");
 		Letter letter;
 		try {
-			letter = new SimpleLetter(1, yang, yang, "Hello");
+			letter = new SimpleLetter(1, yang, yang, new TextContent("Hello"));
 			city.addInhabitant(yang);
 			city.sendLetter(yang, letter);
 			city.distributeLetters();

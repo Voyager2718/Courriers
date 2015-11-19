@@ -1,0 +1,19 @@
+package letter;
+
+import inhabitant.Inhabitant;
+
+public class ThanksLetter extends SimpleLetter {
+
+	public ThanksLetter(int cost, Inhabitant sender, Inhabitant receiver, TextContent text) throws IncorrectCostException {
+		super(cost, sender, receiver, text);
+	}
+
+	public void doSend() {
+		// TODO Auto-generated method stub
+	}
+
+	public Letter doReceive() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+}

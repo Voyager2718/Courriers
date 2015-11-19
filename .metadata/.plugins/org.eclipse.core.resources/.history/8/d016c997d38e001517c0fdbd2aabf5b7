@@ -1,0 +1,11 @@
+package content;
+
+public class SimpleContent implements Content {
+	protected String text;
+	
+	public SimpleContent
+
+	public int getContent() {
+		return text;
+	}
+}

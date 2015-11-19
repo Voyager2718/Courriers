@@ -1,9 +1,11 @@
 package letter;
 
-public class PromissoryLetter extends LetterDecorator {
-	protected int moneyToTransfer;
+import content.MoneyContent;
 
-	public PromissoryLetter(int moneyToTransfer, Letter decoratedLetter) {
+public class PromissoryLetter extends LetterDecorator {
+	protected MoneyContent moneyToTransfer;
+
+	public PromissoryLetter(MoneyContent moneyToTransfer, Letter decoratedLetter) {
 		this.decoratedLetter = decoratedLetter;
 		this.moneyToTransfer = moneyToTransfer;
 	}

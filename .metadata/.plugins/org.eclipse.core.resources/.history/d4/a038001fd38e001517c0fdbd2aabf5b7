@@ -1,0 +1,14 @@
+package content;
+
+public class MoneyContent extends ContentDecorator {
+	protected int amount;
+
+	public MoneyContent(int amount, Content content) {
+		super(content);
+		this.amount = amount;
+	}
+
+	public int getMoney() {
+		return amount;
+	}
+}

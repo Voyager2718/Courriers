@@ -1,5 +1,6 @@
 package letter;
 
+import content.TextContent;
 import inhabitant.Inhabitant;
 import letter.Letter;
 
@@ -14,7 +15,7 @@ public abstract class LetterDecorator implements Letter {
 		return decoratedLetter.getReceiver();
 	}
 
-	public String getText() {
+	public TextContent getText() {
 		return decoratedLetter.getText();
 	}
 }
