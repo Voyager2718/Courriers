@@ -39,11 +39,11 @@ public class PromissoryLetter extends LetterDecorator {
 	}
 
 	public String getContentDescription() {
-		return " whose content is a promissory letter" + decoratedLetter.getContentDescription();
+		return " whose content is a promissory letter + decoratedLetter.getContentDescription();
 	}
 
 	public String getLetterDescription() {
-		return " a promissory letter whose content is money content(" + moneyToTransfer.getContent() + ")"
-				+ decoratedLetter.getContentDescription();
+		return " a promissory letter whose content is money content(" + moneyToTransfer.getContent()
+				+ ")"  + decoratedLetter.getContentDescription();
 	}
 }

@@ -23,7 +23,7 @@ public class PromissoryLetter extends LetterDecorator {
 	public Letter doReceive() {
 		Letter thanksLetter = null;
 		System.out.println("<-o Inhabitant-" + getReceiver().getName() + " receives" + getLetterDescription()
-				+ " from inhabitant-" + getSender().getName() + ".");
+		+ " from inhabitant-" + getSender().getName() + ".");
 		getReceiver().credit(getMoneyContent().getContent());
 		try {
 			thanksLetter = new ThanksLetter(0, getReceiver(), getSender(),
@@ -43,7 +43,6 @@ public class PromissoryLetter extends LetterDecorator {
 	}
 
 	public String getLetterDescription() {
-		return " a promissory letter whose content is money content(" + moneyToTransfer.getContent() + ")"
-				+ decoratedLetter.getContentDescription();
+		return " a promissory letter" + decoratedLetter.getContentDescription();
 	}
 }
