@@ -57,10 +57,10 @@ public class SimpleLetter implements Letter {
 	}
 
 	public String getContentDescription() {
-		return " whose content is a simple letter whose content is a text (" + text.getContent() + ")";
+		return " whose content is"+getLetterDescription()+"whose content is a text (" + text.getContent() + ")";
 	}
 
 	public String getLetterDescription() {
-		return " a simple letter";
+		return " a simple letter ";
 	}
 }
