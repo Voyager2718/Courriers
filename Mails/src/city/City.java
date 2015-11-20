@@ -48,15 +48,19 @@ public class City {
 		System.out.println("Creating " + this.name + " city");
 		for (int i = 0; i < 100; i++)
 			this.inhabitants.add(new Inhabitant(Integer.toString(i + 1)));
-		System.out.println("Creating " + quantityOfInhabitant + " inhabitant");
-		System.out.println(((quantityOfInhabitant == 1) ? "" : "s"));
+		System.out.print("Creating " + quantityOfInhabitant + " inhabitant");
+		System.out.print(((quantityOfInhabitant == 1) ? "" : "s"));
+		System.out.println();
 	}
 
 	public City(String name, List<Inhabitant> inhabitants) {
 		this.name = name;
-		this.inhabitants.addAll(inhabitants);
-		System.out.println("Creating " + this.inhabitants.size() + " inhabitant");
-		System.out.println(((this.inhabitants.size() == 1) ? "" : "s"));
+		for (Inhabitant inhabitant : inhabitants) {
+			this.inhabitants.add(inhabitant);
+		}
+		System.out.print("Creating " + this.inhabitants.size() + " inhabitant");
+		System.out.print(((this.inhabitants.size() == 1) ? "" : "s"));
+		System.out.println();
 	}
 
 	public String getName() {
@@ -99,5 +103,15 @@ public class City {
 			deliveringBox.add(postBox.get(0));
 			postBox.remove(0);
 		}
+	}
+	public List<Inhabitant> getInhabitants() {
+		return inhabitants;
+	}
+	public Inhabitant getInhabitants(int i) {
+		return inhabitants.get(i);
+	}
+
+	public List<Letter> getLetter() {
+		return this.postBox;
 	}
 }
