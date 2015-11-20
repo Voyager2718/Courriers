@@ -1,9 +1,0 @@
-package letter;
-
-import inhabitant.Inhabitant;
-
-public class LetterTest {
-	public static void main(String args[]) {
-		Letter decoratedLetter = new PromissoryLetter(new SimpleLetter(1, new Inhabitant("YANG"), null, null));
-	}
-}

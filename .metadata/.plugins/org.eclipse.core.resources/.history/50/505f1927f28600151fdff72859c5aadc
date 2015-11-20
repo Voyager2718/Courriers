@@ -1,5 +1,0 @@
-package letters;
-
-public interface Letter {
-
-}

@@ -1,0 +1,30 @@
+package letter;
+
+import content.MoneyContent;
+
+public class PromissoryLetter extends LetterDecorator {
+	protected MoneyContent moneyToTransfer;
+
+	public PromissoryLetter(MoneyContent moneyToTransfer, Letter decoratedLetter) {
+		this.decoratedLetter = decoratedLetter;
+		this.moneyToTransfer = moneyToTransfer;
+	}
+
+	public String getDescription() {
+		return decoratedLetter.getDescription() + " with money";
+	}
+
+	public void doSend() {
+		// TODO Auto-generated method stub
+	}
+
+	public Letter doReceive() {
+System.out.println("<-o Inhabitant-"+getReceiver().getName()+" receives a promissory note letter whose content is a money content (731) from inhabitant-87
+");
+		return null;// If no need to send a receive, then return null
+	}
+
+	public int getCost() {
+		return (int) (decoratedLetter.getCost() * 0.01 + 1);
+	}
+}

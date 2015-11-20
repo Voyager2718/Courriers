@@ -1,5 +1,7 @@
 package letter;
 
+import content.TextContent;
+
 public class RegisteredLetter extends LetterDecorator {
 	public RegisteredLetter(Letter decoratedLetter) {
 		this.decoratedLetter = decoratedLetter;
@@ -10,15 +12,22 @@ public class RegisteredLetter extends LetterDecorator {
 	}
 
 	public void doSend() {
-		// TODO Auto-generated method stub
-
+		System.out.println("o-> Inhabitant-" + getSender()
+				+ " mails a registered letter whose content is a simple letter whose content is a text content ("
+				+ getText().getContent() + ") from inhabitant-" + getReceiver().getName());
 	}
 
 	public Letter doReceive() {
-		return null; // TODO : Should return a receipt.
+		Letter receipt = null;
+		try {
+			receipt = new Receipt(0, getReceiver(), getSender(), new TextContent(
+					"Aknowledgment of receipt for a registered letter whose content is a simple letter."));
+		} catch (IncorrectCostException e) {
+		}
+		return receipt;
 	}
 
 	public int getCost() {
-		return decoratedLetter.getCost();
+		return decoratedLetter.getCost() + 15;
 	}
 }

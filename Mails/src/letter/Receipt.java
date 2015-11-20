@@ -5,9 +5,8 @@ import inhabitant.Inhabitant;
 
 public class Receipt extends SimpleLetter {
 
-	public Receipt(int cost, Inhabitant sender, Inhabitant receiver) throws IncorrectCostException {
-		super(cost, sender, receiver, new TextContent(""));// A receipt no need
-															// to have any text.
+	public Receipt(int cost, Inhabitant sender, Inhabitant receiver, TextContent text) throws IncorrectCostException {
+		super(cost, sender, receiver, text);
 	}
 
 	public String getDescription() {
@@ -15,11 +14,15 @@ public class Receipt extends SimpleLetter {
 	}
 
 	public void doSend() {
-		super.doSend();
-		System.out.println("no text");
+		System.out.println("|-> Inhabitant-" + getSender().getName()
+				+ "mails an aknowledgment of receipt which is a simple letter whose content is a text content ("
+				+ getText().getContent() + ").");
 	}
 
 	public Letter doReceive() {
-		return null;
+		System.out.println("<-o Inhabitant-" + getReceiver().getName()
+				+ "receives an aknowledgment of receipt which is a simple letter whose content is a text content ("
+				+ getText().getContent() + ").");
+		return null;// No need to send a receipt.
 	}
 }

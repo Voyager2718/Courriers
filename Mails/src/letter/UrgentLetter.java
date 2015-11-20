@@ -10,8 +10,15 @@ public class UrgentLetter extends LetterDecorator {
 	}
 
 	public void doSend() {
-		// TODO Auto-generated method stub
-
+		System.out.println("<-o Inhabitant-" + getReceiver().getName()
+				+ " receives an urgent letter whose content is a registered letter whose content is a simple letter whose content is a text content ("
+				+ getText().getContent() + ") from inhabitant-" + getSender().getName());// TODO
+																							// :
+																							// description
+																							// should
+																							// be
+																							// generated
+																							// automatically.
 	}
 
 	public Letter doReceive() {

@@ -49,25 +49,24 @@ public class City {
 	}
 
 	public void addInhabitants(List<Inhabitant> inhabitant) {
-		for (Inhabitant inhabitant2 : inhabitant) {
-			addInhabitant(inhabitant2);
-		}
+		this.inhabitants.addAll(inhabitants);
 	}
 
-	public void sendLetter(Inhabitant sender, Letter letter) {
-		letter.doSend();
-		sender.debit(letter.getCost());
-		this.postBox.add(letter);
+	public void sendLetter(Letter letter) {
+		postBox.add(letter);
 	}
 
 	public void distributeLetters() {
 		while (!postBox.isEmpty()) {
+			postBox.get(0).doSend();
+			postBox.get(0).getSender().debit(postBox.get(0).getCost());
 			deliveringBox.add(postBox.get(0));
 			postBox.remove(0);
 		}
-		// Add a way to send a receipt and thanks letter.
 		while (!deliveringBox.isEmpty()) {
-			deliveringBox.get(0).doReceive();
+			Letter letter = deliveringBox.get(0).doReceive();
+			if (letter != null)
+				postBox.add(letter);
 			deliveringBox.remove(0);
 		}
 	}

@@ -31,7 +31,7 @@ public class Inhabitant {
 	}
 
 	public void credit(int cost) {
-		System.out.println("(+)Inhabitant-" + getName() + " account is credited with " + Integer.toString(cost)
+		System.out.println("(+) Inhabitant-" + getName() + " account is credited with " + Integer.toString(cost)
 				+ " euros whose balance is now " + Integer.toString(getBalance()) + " euros.");
 		bankAccount.credit(cost);
 	}

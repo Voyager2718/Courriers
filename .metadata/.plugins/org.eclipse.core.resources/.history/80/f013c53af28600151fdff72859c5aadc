@@ -1,5 +1,0 @@
-package letters;
-
-public abstract class Letter {
-	Inhabitents sender;
-}

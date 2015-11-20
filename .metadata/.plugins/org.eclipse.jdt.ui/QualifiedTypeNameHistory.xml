@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="inhabitents.Inhabitents"/>
-<fullyQualifiedTypeName name="content.Content"/>
 <fullyQualifiedTypeName name="inhabitents.Inhabitent"/>
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="letters.Letter"/>
-<fullyQualifiedTypeName name="letter.Letter"/>
 <fullyQualifiedTypeName name="city.BankAccount"/>
-<fullyQualifiedTypeName name="content.TextContent"/>
+<fullyQualifiedTypeName name="javax.swing.text.html.HTMLDocument.Iterator"/>
+<fullyQualifiedTypeName name="java.util.Iterator"/>
+<fullyQualifiedTypeName name="city.City"/>
+<fullyQualifiedTypeName name="org.junit.Test"/>
+<fullyQualifiedTypeName name="letter.SimpleLetter"/>
+<fullyQualifiedTypeName name="letter.Letter"/>
+<fullyQualifiedTypeName name="org.junit.Before"/>
+<fullyQualifiedTypeName name="inhabitant.Inhabitant"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="content.Content"/>
 <fullyQualifiedTypeName name="content.MoneyContent"/>
+<fullyQualifiedTypeName name="content.TextContent"/>
 </qualifiedTypeNameHistroy>

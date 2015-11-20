@@ -6,7 +6,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 public class BankAccoutTest {
-	protected BankAccount b ;
+	BankAccount b ;
 	@Before
 	public void init(){
 		b = new BankAccount(1000);

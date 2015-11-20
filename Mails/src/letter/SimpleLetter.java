@@ -19,6 +19,13 @@ public class SimpleLetter implements Letter {
 		this.text = textContent;
 	}
 
+	public SimpleLetter(Inhabitant sender, Inhabitant receiver, TextContent textContent) {
+		this.cost = 1;
+		this.sender = sender;
+		this.receiver = receiver;
+		this.text = textContent;
+	}
+
 	public Inhabitant getSender() {
 		return sender;
 	}

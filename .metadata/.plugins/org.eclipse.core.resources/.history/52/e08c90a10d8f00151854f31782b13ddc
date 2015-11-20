@@ -1,0 +1,30 @@
+package letter;
+
+public class RegisteredLetter extends LetterDecorator {
+	public RegisteredLetter(Letter decoratedLetter) {
+		this.decoratedLetter = decoratedLetter;
+	}
+
+	public String getDescription() {
+		return decoratedLetter.getDescription() + " with an acknowledgment of receipt";
+	}
+
+	public void doSend() {
+		// TODO Auto-generated method stub
+
+	}
+
+	public Letter doReceive() {
+		try {
+			Letter a = new Receipt(0, getReceiver(), getSender());
+		} catch (IncorrectCostException e) {
+		} finally {
+			return a;
+		}
+		return decoratedLetter;
+	}
+
+	public int getCost() {
+		return decoratedLetter.getCost();
+	}
+}

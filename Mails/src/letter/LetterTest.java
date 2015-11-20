@@ -12,7 +12,10 @@ public class LetterTest {
 	protected static int daySender;
 	
 	public static void main(String args[]) throws IncorrectCostException {
-		City city = new City("Canton");
+		/*
+		  City city = new City("Canton");
+		 
+<<<<<<< HEAD
 		Inhabitant[] tab = new Inhabitant[100];
 		int sender,receiver;
 		int days=new Random().nextInt(10)+1;
@@ -24,6 +27,20 @@ public class LetterTest {
 		for (int daysPassed = 0; daysPassed < days; daysPassed++) {
 			System.out.println("**********************************");
 			System.out.println("Day "+(daysPassed+1));
+=======
+		Inhabitant yang = new Inhabitant("YANG");
+		Letter letter;
+		try {
+			letter = new SimpleLetter(1, yang, yang, new TextContent("Hello"));
+			city.addInhabitant(yang);
+			city.sendLetter(letter);
+			city.distributeLetters();
+			city.distributeLetters();
+			Letter promissoryLetter = new PromissoryLetter(new MoneyContent(10000),
+					new SimpleLetter(yang, yang, new TextContent("Hello2")));
+			city.sendLetter(promissoryLetter);
+			city.distributeLetters();
+>>>>>>> nearly finished.
 			city.distributeLetters();
 			daySender=new Random().nextInt(5)+1;
 			for (int i = 0; i < daySender; i++) {
@@ -60,5 +77,6 @@ public class LetterTest {
 			break;
 		}
 		return letter;
+		*/
 	}
 }

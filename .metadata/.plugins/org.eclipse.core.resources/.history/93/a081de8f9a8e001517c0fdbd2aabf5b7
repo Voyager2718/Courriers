@@ -1,5 +1,0 @@
-package letter;
-
-public abstract class Letter {
-	public abstract String getDescription();
-}

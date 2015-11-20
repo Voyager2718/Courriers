@@ -1,9 +1,0 @@
-package inhabitant;
-
-import city.BankAccount;
-
-public class Inhabitent {
-	protected String name;
-	protected BankAccount bankAccount = new BankAccount();
-	
-}

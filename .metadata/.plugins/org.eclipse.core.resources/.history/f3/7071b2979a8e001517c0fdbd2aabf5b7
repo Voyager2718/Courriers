@@ -1,6 +1,0 @@
-package letter;
-
-public abstract class Letter {
-	protected 
-	public abstract String getDescription();
-}
