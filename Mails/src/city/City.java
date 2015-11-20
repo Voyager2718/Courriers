@@ -6,6 +6,11 @@ import java.util.List;
 import inhabitant.Inhabitant;
 import letter.Letter;
 
+/**
+ * This city contains a post office that can send mails. All mailing(sending and
+ * receiving) actions will be take place in this class.
+ *
+ */
 public class City {
 	protected String name;
 	protected List<Inhabitant> inhabitants = new ArrayList<Inhabitant>();
@@ -78,8 +83,8 @@ public class City {
 
 	/**
 	 * At the beginning, this function will distribute all letters in delivering
-	 * box of the city. Then will send all letters in the post box of the city (which will
-	 * be put into the delivering box).
+	 * box of the city. Then will send all letters in the post box of the city
+	 * (which will be put into the delivering box).
 	 */
 	public void distributeLetters() {
 		while (!deliveringBox.isEmpty()) {

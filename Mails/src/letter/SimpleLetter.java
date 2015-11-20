@@ -4,7 +4,7 @@ import content.TextContent;
 import inhabitant.Inhabitant;
 
 public class SimpleLetter implements Letter {
-	protected int cost;
+	protected int cost; // Fundamental cost of a simple letter.
 	protected Inhabitant sender;
 	protected Inhabitant receiver;
 	protected TextContent text;

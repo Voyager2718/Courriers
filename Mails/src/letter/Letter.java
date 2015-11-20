@@ -4,8 +4,18 @@ import content.TextContent;
 import inhabitant.Inhabitant;
 
 public interface Letter {
+	/**
+	 * This function is for showing details of the content of a letter.
+	 * 
+	 * @return : All description of content.
+	 */
 	public String getContentDescription();
 
+	/**
+	 * This function is for showing details of a letter.
+	 * 
+	 * @return : The description of a letter.
+	 */
 	public String getLetterDescription();
 
 	public Inhabitant getSender();
@@ -14,9 +24,21 @@ public interface Letter {
 
 	public TextContent getText();
 
+	/**
+	 * This function is for sending mails.
+	 */
 	public void doSend();
 
+	/**
+	 * This function is for receiving mails. If there's money in the letter,
+	 * this function will also deposit to the bank account of receiver.
+	 */
 	public Letter doReceive();
 
+	/**
+	 * Get the cost of letter(All fees included).
+	 * 
+	 * @return : The cost of letter.
+	 */
 	public int getCost();
 }

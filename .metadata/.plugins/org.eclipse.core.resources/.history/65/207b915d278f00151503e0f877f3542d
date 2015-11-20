@@ -1,0 +1,9 @@
+package content;
+
+/**
+ * This interface is just to 
+ * @author YANG
+ *
+ */
+public interface Content {
+}

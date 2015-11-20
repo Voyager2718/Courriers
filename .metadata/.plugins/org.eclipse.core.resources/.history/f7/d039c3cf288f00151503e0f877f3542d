@@ -1,0 +1,29 @@
+package letter;
+
+import content.TextContent;
+import inhabitant.Inhabitant;
+
+public interface Letter {
+	public String getContentDescription();
+
+	public String getLetterDescription();
+
+	public Inhabitant getSender();
+
+	public Inhabitant getReceiver();
+
+	public TextContent getText();
+
+	/**
+	 * This function is for sending mails.
+	 */
+	public void doSend();
+
+	/**
+	 * This function is for receiving mails.
+	 * If there's money in the letter, this function will also deposit  
+	 */
+	public Letter doReceive();
+
+	public int getCost();
+}

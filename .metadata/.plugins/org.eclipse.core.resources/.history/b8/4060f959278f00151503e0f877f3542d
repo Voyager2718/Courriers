@@ -1,0 +1,9 @@
+package content;
+
+/**
+ * 
+ * @author YANG
+ *
+ */
+public interface Content {
+}

@@ -1,5 +1,7 @@
 package letter;
 
+import content.TextContent;
+
 public class RegisteredLetter extends LetterDecorator {
 	public RegisteredLetter(Letter decoratedLetter) {
 		this.decoratedLetter = decoratedLetter;
@@ -15,7 +17,7 @@ public class RegisteredLetter extends LetterDecorator {
 		System.out.println("<-o Inhabitant-" + getReceiver().getName() + " receives" + getLetterDescription()
 				+ " from inhabitant-" + getSender().getName() + ".");
 		try {
-			receipt = new Receipt(0, getReceiver(), getSender());
+			receipt = new Receipt(0, getReceiver(), getSender(), new TextContent(getLetterDescription()));
 		} catch (IncorrectCostException e) {
 		}
 		return receipt;

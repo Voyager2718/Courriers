@@ -1,4 +1,9 @@
 package content;
 
+/**
+ * This interface is spare for works in the future. For example, maybe we will
+ * have a content of Box. And Box should implement this interface.
+ *
+ */
 public interface Content {
 }

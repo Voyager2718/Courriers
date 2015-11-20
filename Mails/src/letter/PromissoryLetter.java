@@ -3,6 +3,10 @@ package letter;
 import content.MoneyContent;
 import content.TextContent;
 
+/**
+ * A letter with money, and will be deposit in receiver's account.
+ *
+ */
 public class PromissoryLetter extends LetterDecorator {
 	protected MoneyContent moneyToTransfer;
 
@@ -11,6 +15,11 @@ public class PromissoryLetter extends LetterDecorator {
 		this.moneyToTransfer = moneyToTransfer;
 	}
 
+	/**
+	 * Get the exact amount of money in the letter.
+	 * 
+	 * @return
+	 */
 	public MoneyContent getMoneyContent() {
 		return moneyToTransfer;
 	}

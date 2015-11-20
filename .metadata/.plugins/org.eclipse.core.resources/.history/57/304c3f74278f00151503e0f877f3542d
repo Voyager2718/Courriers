@@ -1,0 +1,9 @@
+package content;
+
+/**
+ * This interface is spare for works in the funture.
+ * @author YANG
+ *
+ */
+public interface Content {
+}

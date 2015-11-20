@@ -1,5 +1,10 @@
 package letter;
 
+/**
+ * The cost of a letter should always be positive or zero. This exception should
+ * be raised when the cost is negative.
+ *
+ */
 public class IncorrectCostException extends Exception {
 
 	public IncorrectCostException(String message) {
