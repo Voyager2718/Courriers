@@ -5,15 +5,15 @@ import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.Test;
 
-public class MoneyContentTest {
-
-	protected MoneyContent content;
+public class TextContentTest {
+	protected TextContent tc;
 	@Before
 	public void init(){
-		content = new MoneyContent(50);
+		tc = new TextContent("test");
 	}
 	@Test
 	public void testGetContent() {
-		assertEquals(50, content.getContent());
+		assertEquals("test",tc.getContent());
 	}
+
 }
