@@ -16,14 +16,16 @@ public class PromissoryLetter extends LetterDecorator {
 	}
 
 	public void doSend() {
-		System.out.println("o-> Inhabitant-" + getSender().getName() + " mails" + getLetterDescription()
-				+ " to inhabitant-" + getReceiver().getName() + " for a cost of " + getCost() + " euro");
+		System.out.println("o-> Inhabitant-" + getSender().getName()
+				+ " mails a promissory note letter whose content is a money content (" + getMoneyContent().getContent()
+				+ ") to inhabitant-" + getReceiver().getName() + " for a cost of " + getCost() + " euro");
 	}
 
 	public Letter doReceive() {
 		Letter thanksLetter = null;
-		System.out.println("<-o Inhabitant-" + getReceiver().getName() + " receives" + getLetterDescription()
-		+ " from inhabitant-" + getSender().getName() + ".");
+		System.out.println("<-o Inhabitant-" + getReceiver().getName()
+				+ " receives a promissory note letter whose content is a money content ("
+				+ getMoneyContent().getContent() + " euros) from inhabitant-" + getSender().getName() + ".");
 		getReceiver().credit(getMoneyContent().getContent());
 		try {
 			thanksLetter = new ThanksLetter(0, getReceiver(), getSender(),
@@ -43,6 +45,6 @@ public class PromissoryLetter extends LetterDecorator {
 	}
 
 	public String getLetterDescription() {
-		return " a promissory letter" + decoratedLetter.getContentDescription();
+		return " a promissory letter";
 	}
 }

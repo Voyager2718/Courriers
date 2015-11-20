@@ -12,7 +12,7 @@ public class UrgentLetter extends LetterDecorator {
 
 	public Letter doReceive() {
 		System.out.println("<-o Inhabitant-" + getReceiver().getName() + " receives" + getLetterDescription()
-		+ " from inhabitant-" + getSender().getName() + ".");
+				+ " from inhabitant-" + getSender().getName());
 
 		return null;// TODO : Should return a receipt.
 	}
@@ -27,6 +27,6 @@ public class UrgentLetter extends LetterDecorator {
 	}
 
 	public String getLetterDescription() {
-		return " an urgent letter" + decoratedLetter.getContentDescription();
+		return " an urgent letter123" + decoratedLetter.getContentDescription();
 	}
 }

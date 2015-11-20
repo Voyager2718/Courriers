@@ -6,13 +6,13 @@ public class UrgentLetter extends LetterDecorator {
 	}
 
 	public void doSend() {
-		System.out.println("o-> Inhabitant-" + getSender().getName() + " mails" + getLetterDescription()
+		System.out.println("o-> Inhabitant123-" + getSender().getName() + " mails" + getLetterDescription()
 				+ " to inhabitant-" + getReceiver().getName() + " for a cost of " + getCost() + " euros");
 	}
 
 	public Letter doReceive() {
 		System.out.println("<-o Inhabitant-" + getReceiver().getName() + " receives" + getLetterDescription()
-		+ " from inhabitant-" + getSender().getName() + ".");
+				+ " from inhabitant-" + getSender().getName());
 
 		return null;// TODO : Should return a receipt.
 	}

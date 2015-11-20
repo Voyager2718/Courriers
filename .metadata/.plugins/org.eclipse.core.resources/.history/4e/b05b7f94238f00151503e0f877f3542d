@@ -13,7 +13,7 @@ public class RegisteredLetter extends LetterDecorator {
 	public Letter doReceive() {
 		Letter receipt = null;
 		System.out.println("<-o Inhabitant-" + getReceiver().getName() + " receives" + getLetterDescription()
-				+ " from inhabitant-" + getSender().getName() + ".");
+		+ " from inhabitant-" + getSender().getName()+ ".");
 		try {
 			receipt = new Receipt(0, getReceiver(), getSender());
 		} catch (IncorrectCostException e) {
