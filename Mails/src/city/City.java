@@ -82,6 +82,7 @@ public class City {
 	 *            : Letter that should be sent.
 	 */
 	public void sendLetter(Letter letter) {
+		letter.doSend();
 		postBox.add(letter);
 	}
 
@@ -98,7 +99,6 @@ public class City {
 			deliveringBox.remove(0);
 		}
 		while (!postBox.isEmpty()) {
-			postBox.get(0).doSend();
 			postBox.get(0).getSender().debit(postBox.get(0).getCost());
 			deliveringBox.add(postBox.get(0));
 			postBox.remove(0);
