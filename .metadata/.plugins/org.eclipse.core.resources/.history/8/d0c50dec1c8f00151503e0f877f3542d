@@ -15,9 +15,10 @@ public class LetterTest {
 		City city = new City("Canton");
 		Inhabitant yang = new Inhabitant("YANG"), song = new Inhabitant("SONG");
 
-		city.sendLetter(new RegisteredLetter(new UrgentLetter(new SimpleLetter(song, yang, new TextContent("Test")))));
+		city.sendLetter(new RegisteredLetter(new UrgentLetter(new SimpleLetter()));
 		
-		city.distributeLetters();
+		
+		
 
 		/*
 		 * City city = new City("Canton");
