@@ -1,9 +1,0 @@
-package letter;
-
-public class RegisteredLetter extends LetterDecorator{
-	@Override
-	public String getDescription() {
-		return " with an acknowledgment of receipt";
-	}
-
-}
