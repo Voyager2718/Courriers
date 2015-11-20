@@ -8,11 +8,12 @@ import org.junit.Test;
 import content.TextContent;
 import inhabitant.Inhabitant;
 
-public class SimpleLetterTest {
+public class RegisteredLetterTest {
 
 	protected SimpleLetter letter;
 	protected Inhabitant sender, receiver;
 	protected TextContent content;
+	protected RegisteredLetter registered;
 	@Before
 	public void init() throws IncorrectCostException{
 		sender = new Inhabitant("pierre");
@@ -21,38 +22,24 @@ public class SimpleLetterTest {
 		receiver = new Inhabitant("paul");
 		content = new TextContent("blabla");
 		letter = new SimpleLetter(10, sender, receiver, content);
-	}
-	
-	@Test
-	public void testGetSender() {
-		assertEquals(sender, letter.getSender());
-	}
-
-	@Test
-	public void testGetReceiver() {
-		assertEquals(receiver, letter.getReceiver());
-	}
-
-	@Test
-	public void testGetText() {
-		assertEquals(content, letter.getText());
+		registered = new RegisteredLetter(letter);
 	}
 
 	@Test
 	public void testGetCost() {
-		assertEquals(10, letter.getCost());
+		assertEquals(25,registered.getCost());
 	}
 
 	@Test
 	public void testGetContentDescription() {
-		String content = " whose content is a simple letter whose content is a text (blabla)";
-		assertEquals(content, letter.getContentDescription());
+		String description = " whose content is a registered letter whose content is a simple letter whose content is a text (blabla)";
+		assertEquals(description, registered.getContentDescription());
 	}
 
 	@Test
 	public void testGetLetterDescription() {
-		String description = " a simple letter ";
-		assertEquals(description, letter.getLetterDescription());
+		String description = " a registered letter whose content is a simple letter whose content is a text (blabla)";
+		assertEquals(description, registered.getLetterDescription());
 	}
 
 }
