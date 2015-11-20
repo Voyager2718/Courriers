@@ -1,7 +1,7 @@
 package city;
 
 /**
- * An inhabitant's bank account.
+ * A class that deal with an inhabitant's bank account.
  *
  */
 public class BankAccount {

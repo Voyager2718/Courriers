@@ -69,30 +69,27 @@ public class City {
 	/**
 	 * Add a letter to the post box of the city.
 	 * 
-	 * @param letter
-	 *            : Letter that should be sent.
+	 * @param letter : Letter that should be sent.
 	 */
 	public void sendLetter(Letter letter) {
 		postBox.add(letter);
 	}
 
 	/**
-	 * At the beginning, this function will distribute all letters in delivering
-	 * box of the city. Then will send all letters in the post box of the city (which will
-	 * be put into the delivering box).
+	 * At the beginning, this function will send all letters in the post box of the city. Then 
 	 */
 	public void distributeLetters() {
-		while (!deliveringBox.isEmpty()) {
-			Letter letter = deliveringBox.get(0).doReceive();
-			if (letter != null)
-				postBox.add(letter);
-			deliveringBox.remove(0);
-		}
 		while (!postBox.isEmpty()) {
 			postBox.get(0).doSend();
 			postBox.get(0).getSender().debit(postBox.get(0).getCost());
 			deliveringBox.add(postBox.get(0));
 			postBox.remove(0);
+		}
+		while (!deliveringBox.isEmpty()) {
+			Letter letter = deliveringBox.get(0).doReceive();
+			if (letter != null)
+				postBox.add(letter);
+			deliveringBox.remove(0);
 		}
 	}
 }

@@ -1,9 +1,5 @@
 package city;
 
-/**
- * An inhabitant's bank account.
- *
- */
 public class BankAccount {
 	protected int amount;
 

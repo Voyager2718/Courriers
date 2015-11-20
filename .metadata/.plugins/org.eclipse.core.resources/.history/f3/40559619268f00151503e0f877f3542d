@@ -1,7 +1,8 @@
 package city;
 
 /**
- * An inhabitant's bank account.
+ * 
+ * @author YANG
  *
  */
 public class BankAccount {

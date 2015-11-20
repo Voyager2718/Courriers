@@ -1,8 +1,8 @@
 package letter;
 
-//import java.util.Random;
+import java.util.Random;
 
-//import letter.*;
+import letter.*;
 import city.City;
 import content.MoneyContent;
 import content.TextContent;

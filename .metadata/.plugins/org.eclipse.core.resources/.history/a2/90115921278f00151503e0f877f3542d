@@ -78,7 +78,7 @@ public class City {
 
 	/**
 	 * At the beginning, this function will distribute all letters in delivering
-	 * box of the city. Then will send all letters in the post box of the city (which will
+	 * box. Then will send all letters in the post box of the city (which will
 	 * be put into the delivering box).
 	 */
 	public void distributeLetters() {
