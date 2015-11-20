@@ -35,7 +35,7 @@ public class PromissoryLetter extends LetterDecorator {
 	}
 
 	public int getCost() {
-		return (int) (moneyToTransfer.getContent() * 0.01 + decoratedLetter.getCost());
+		return (int) (decoratedLetter.getCost() * 0.01 + 1);
 	}
 
 	public String getContentDescription() {

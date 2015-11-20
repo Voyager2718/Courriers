@@ -52,8 +52,8 @@ public class SimpleLetter implements Letter {
 		System.out.println(
 				"<-o Inhabitant-" + getReceiver().getName() + " receives a simple letter whose content is a text "
 						+ getText().getContent() + " from inhabitant-" + getSender().getName());
-		return null;// If no need to send a receipt or thanks letter, return
-					// null.
+		return null;// TODO : If no need to send a receipt or thanks letter,
+					// return null.
 	}
 
 	public String getContentDescription() {

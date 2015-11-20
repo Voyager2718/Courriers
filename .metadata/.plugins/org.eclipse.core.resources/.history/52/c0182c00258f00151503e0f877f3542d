@@ -48,7 +48,7 @@ public class City {
 		this.inhabitants.add(inhabitant);
 	}
 
-	public void addInhabitants(List<Inhabitant> inhabitants) {
+	public void addInhabitants(List<Inhabitant> inhabitant) {
 		this.inhabitants.addAll(inhabitants);
 	}
 
