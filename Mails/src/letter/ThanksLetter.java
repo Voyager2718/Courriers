@@ -16,7 +16,7 @@ public class ThanksLetter extends SimpleLetter {
 	}
 
 	public void doSend() {
-		System.out.println("<-o Inhabitant-" + getSender().getName()
+		System.out.println("o-> Inhabitant-" + getSender().getName()
 				+ " mails a thanks letter which is a simple letter whose content is a text content ("
 				+ getText().getContent() + ") to inhabitant-" + getReceiver().getName() + " for a cost of " + getCost()
 				+ " euro.");

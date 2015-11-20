@@ -38,18 +38,14 @@ public class SimpleLetter implements Letter {
 		return text;
 	}
 
-	public String getDescription() {
-		return "a simple letter";
-	}
-
 	public int getCost() {
 		return cost;
 	}
 
 	public void doSend() {
-		System.out.println("o-> Inhabitant-" + getSender().getName()
-				+ " mails "+this.getDescription()+" whose content is a text (" + getText().getContent() + ") to inhabitent-"
-				+ getReceiver().getName() + " for a cost of " + Integer.toString(getCost()) + " euros.");
+		System.out.println("o-> Inhabitant-" + getSender().getName() + " mails " + this.getLetterDescription()
+				+ getContentDescription() + " to inhabitent-" + getReceiver().getName() + " for a cost of "
+				+ Integer.toString(getCost()) + " euros.");
 	}
 
 	public Letter doReceive() {
@@ -58,5 +54,13 @@ public class SimpleLetter implements Letter {
 						+ getText().getContent() + " from inhabitant-" + getSender().getName());
 		return null;// TODO : If no need to send a receipt or thanks letter,
 					// return null.
+	}
+
+	public String getContentDescription() {
+		return " whose content is a simple letter whose content is a text (" + text.getContent() + ")";
+	}
+
+	public String getLetterDescription() {
+		return " a simple letter";
 	}
 }

@@ -11,10 +11,6 @@ public class PromissoryLetter extends LetterDecorator {
 		this.moneyToTransfer = moneyToTransfer;
 	}
 
-	public String getDescription() {
-		return decoratedLetter.getDescription() + " with money";
-	}
-
 	public MoneyContent getMoneyContent() {
 		return moneyToTransfer;
 	}
@@ -42,5 +38,13 @@ public class PromissoryLetter extends LetterDecorator {
 
 	public int getCost() {
 		return (int) (decoratedLetter.getCost() * 0.01 + 1);
+	}
+
+	public String getContentDescription() {
+		return " whose content is a promissory letter";
+	}
+
+	public String getLetterDescription() {
+		return " a promissory letter" + decoratedLetter.getContentDescription();
 	}
 }
